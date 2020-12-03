@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity"
+    android:background="@mipmap/open">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="352dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:hint="标题"
+        android:textSize="35dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="355dp"
+        android:layout_height="344dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:hint="内容"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"></EditText>
+
+    <EditText
+        android:id="@+id/time1"
+        android:layout_width="352dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:hint="日期"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content"></EditText>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="135dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:alpha="50"
+        android:background="#FFFB9C"
+        android:text="save"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="135dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:alpha="50"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
