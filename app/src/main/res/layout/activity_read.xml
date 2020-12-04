@@ -7,8 +7,8 @@
     tools:context=".WriteActivity"
     android:background="@mipmap/open">
 
-    <EditText
-        android:id="@+id/title1"
+    <TextView
+        android:id="@+id/title2"
         android:layout_width="352dp"
         android:layout_height="64dp"
         android:layout_marginStart="28dp"
@@ -17,10 +17,10 @@
         android:textSize="35dp"
         android:gravity="center_vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></EditText>
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
-    <EditText
-        android:id="@+id/content1"
+    <TextView
+        android:id="@+id/content2"
         android:layout_width="355dp"
         android:layout_height="344dp"
         android:layout_marginStart="28dp"
@@ -28,10 +28,10 @@
         android:hint="内容"
         android:textSize="35dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title1"></EditText>
+        app:layout_constraintTop_toBottomOf="@+id/title2"></TextView>
 
-    <EditText
-        android:id="@+id/time1"
+    <TextView
+        android:id="@+id/time2"
         android:layout_width="352dp"
         android:layout_height="50dp"
         android:layout_marginStart="28dp"
@@ -39,31 +39,18 @@
         android:hint="日期"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/content1"></EditText>
+        app:layout_constraintTop_toBottomOf="@+id/content2"></TextView>
 
     <Button
-        android:id="@+id/save1"
+        android:id="@+id/back2"
         android:layout_width="135dp"
         android:layout_height="66dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="24dp"
-        android:alpha="50"
-        android:background="#FFFB9C"
-        android:text="save"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time1" />
-
-    <Button
-        android:id="@+id/back1"
-        android:layout_width="135dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="136dp"
         android:alpha="50"
         android:background="#FFFB9C"
         android:text="back"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time1" />
+        app:layout_constraintTop_toBottomOf="@+id/time2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

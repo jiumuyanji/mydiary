@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val dbHelper=MyDatabaseHelper(this,"Diary.db",1)
         begin.setOnClickListener {
+            dbHelper.writableDatabase
             val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
         }
