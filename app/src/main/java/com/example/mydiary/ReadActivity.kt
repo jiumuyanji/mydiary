@@ -3,6 +3,7 @@ package com.example.mydiary
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_read.*
 
 
@@ -24,7 +25,22 @@ class ReadActivity : AppCompatActivity() {
 
         }
         back2.setOnClickListener {
+            val intent= Intent(this,ListActivity::class.java)
+            startActivity(intent)
             finish()
+        }
+        delete2.setOnClickListener {
+            AlertDialog.Builder(this).apply {
+                setTitle("确认删除")
+                setMessage("会删除所有与当前的日记同名的日记！")
+                setCancelable(false)
+                setPositiveButton("ok"){_, _->
+                    db.delete("diary","title=?", arrayOf(extraData.toString()))
+                }
+                setNegativeButton("cancel",null)
+                create()
+                show()
+            }
         }
     }
 }

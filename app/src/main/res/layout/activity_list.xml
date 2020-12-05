@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListActivity"
-    android:background="@mipmap/open">
+    android:background="@mipmap/open"
+    tools:context=".ListActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -13,9 +13,9 @@
         android:layout_height="48dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
         android:text="日记列表"
         android:textSize="35dp"
-        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,11 +32,23 @@
         android:id="@+id/add"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="128dp"
         android:layout_marginBottom="16dp"
         android:background="#FFFB9C"
         android:text="+"
         android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/clean"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFB9C"
+        android:text="c"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -46,11 +46,24 @@
         android:layout_width="135dp"
         android:layout_height="66dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginEnd="40dp"
         android:alpha="50"
         android:background="#FFFB9C"
         android:text="back"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time2" />
+
+    <Button
+        android:id="@+id/delete2"
+        android:layout_width="135dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        android:alpha="50"
+        android:background="#FFFB9C"
+        android:text="delete"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/back2"
         app:layout_constraintTop_toBottomOf="@+id/time2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
